@@ -1,0 +1,12 @@
+inherit_from:
+  - https://raw.githubusercontent.com/voxable-labs/ruby-style-guide/master/.rubocop.yml
+
+# Don't require documentation for call methods in migrations
+Style/DocumentationMethod:
+  Exclude:
+    - db/migrate/*.rb
+
+# Don't measure class length for controllers.
+Metrics/ClassLength:
+  Exclude:
+    - ./app/bots/rowbot/controllers/**/*.rb

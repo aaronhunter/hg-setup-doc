@@ -17,3 +17,12 @@
 /yarn-error.log
 
 .byebug_history
+
+# Ignore secrets file
+/.env
+
+# Ignore RubyMine
+/.idea
+
+# Rubocop style cache
+.rubocop-https---raw-githubusercontent-com-voxable-labs-ruby-style-guide-master--rubocop-yml
